@@ -1,0 +1,86 @@
+# Kotlin/JVM
+*.class
+*.jar
+*.war
+*.ear
+*.aar
+
+# Gradle
+build/
+.gradle/
+gradle-app.setting
+!gradle-wrapper.jar
+!gradle-wrapper.properties
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Eclipse
+.project
+.classpath
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# Log files
+*.log
+
+# Temporary files
+*.temp
+*.tmp
+
+# JVM crash logs
+hs_err_pid*
+replay_pid*
+
+# Compose Multiplatform
+compose-resources/
+.compose-cache/
+
+# Application packaging
+*.dmg
+*.pkg
+*.deb
+*.rpm
+*.msi
+*.exe
+*.app
+
+# Local configuration files
+local.properties
+keystore.properties
+
+# Test results
+test-results/
+reports/
+
+# Documentation generated files
+dokka/

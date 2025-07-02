@@ -1,0 +1,208 @@
+# Optimus Toolshed - Complete Version Catalog
+# Reference: docs/tech_stack_spec.md:67-219
+# All library versions for Kotlin Compose Multiplatform Desktop Application
+
+[versions]
+# Core Language and Runtime
+kotlin = "1.9.24"
+kotlinx-coroutines = "1.8.1"
+kotlinx-serialization = "1.7.1"
+kotlinx-collections-immutable = "0.3.7"
+kotlinx-datetime = "0.6.0"
+
+# UI Framework
+compose-multiplatform = "1.6.11"
+compose-compiler = "1.5.14"
+
+# Build System and Tools
+gradle-versions = "0.51.0"
+
+# Testing Framework
+junit5 = "5.10.2"
+mockk = "1.13.11"
+kotest = "5.9.1"
+testng = "7.10.2"
+
+# Logging Framework
+slf4j = "2.0.13"
+logback = "1.5.6"
+kotlin-logging = "3.0.5"
+
+# File System and I/O
+okio = "3.9.0"
+apache-commons-io = "2.16.1"
+
+# Configuration Management
+typesafe-config = "1.4.3"
+apache-commons-configuration = "2.10.1"
+
+# Plugin Architecture Dependencies
+koin = "3.5.6"
+javax-inject = "1"
+asm = "9.7"
+
+# Internationalization Libraries
+icu4j = "75.1"
+apache-commons-text = "1.12.0"
+snakeyaml = "2.2"
+
+# Code Quality and Documentation
+detekt = "1.23.6"
+ktlint = "1.2.1"
+dokka = "1.9.20"
+
+[libraries]
+# ===== Core Kotlin Libraries =====
+kotlin-stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib", version.ref = "kotlin" }
+kotlin-reflect = { module = "org.jetbrains.kotlin:kotlin-reflect", version.ref = "kotlin" }
+
+# ===== Kotlinx Libraries =====
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinx-coroutines" }
+kotlinx-coroutines-swing = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-swing", version.ref = "kotlinx-coroutines" }
+
+kotlinx-serialization-core = { module = "org.jetbrains.kotlinx:kotlinx-serialization-core", version.ref = "kotlinx-serialization" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinx-serialization" }
+
+kotlinx-collections-immutable = { module = "org.jetbrains.kotlinx:kotlinx-collections-immutable", version.ref = "kotlinx-collections-immutable" }
+kotlinx-datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "kotlinx-datetime" }
+
+# ===== Compose Multiplatform =====
+compose-runtime = { module = "org.jetbrains.compose.runtime:runtime", version.ref = "compose-multiplatform" }
+compose-foundation = { module = "org.jetbrains.compose.foundation:foundation", version.ref = "compose-multiplatform" }
+compose-material3 = { module = "org.jetbrains.compose.material3:material3", version.ref = "compose-multiplatform" }
+compose-material-icons-extended = { module = "org.jetbrains.compose.material:material-icons-extended", version.ref = "compose-multiplatform" }
+compose-ui = { module = "org.jetbrains.compose.ui:ui", version.ref = "compose-multiplatform" }
+compose-ui-graphics = { module = "org.jetbrains.compose.ui:ui-graphics", version.ref = "compose-multiplatform" }
+compose-ui-text = { module = "org.jetbrains.compose.ui:ui-text", version.ref = "compose-multiplatform" }
+compose-ui-tooling = { module = "org.jetbrains.compose.ui:ui-tooling", version.ref = "compose-multiplatform" }
+compose-ui-tooling-preview = { module = "org.jetbrains.compose.ui:ui-tooling-preview", version.ref = "compose-multiplatform" }
+compose-ui-test-junit4 = { module = "org.jetbrains.compose.ui:ui-test-junit4", version.ref = "compose-multiplatform" }
+
+# ===== Testing Framework =====
+junit-jupiter-engine = { module = "org.junit.jupiter:junit-jupiter-engine", version.ref = "junit5" }
+junit-jupiter-api = { module = "org.junit.jupiter:junit-jupiter-api", version.ref = "junit5" }
+junit-jupiter-params = { module = "org.junit.jupiter:junit-jupiter-params", version.ref = "junit5" }
+
+mockk = { module = "io.mockk:mockk", version.ref = "mockk" }
+
+kotest-runner-junit5 = { module = "io.kotest:kotest-runner-junit5", version.ref = "kotest" }
+kotest-assertions-core = { module = "io.kotest:kotest-assertions-core", version.ref = "kotest" }
+
+testng = { module = "org.testng:testng", version.ref = "testng" }
+
+# ===== Logging Framework =====
+slf4j-api = { module = "org.slf4j:slf4j-api", version.ref = "slf4j" }
+logback-classic = { module = "ch.qos.logback:logback-classic", version.ref = "logback" }
+logback-core = { module = "ch.qos.logback:logback-core", version.ref = "logback" }
+kotlin-logging = { module = "io.github.microutils:kotlin-logging-jvm", version.ref = "kotlin-logging" }
+
+# ===== File System and I/O =====
+okio = { module = "com.squareup.okio:okio", version.ref = "okio" }
+apache-commons-io = { module = "commons-io:commons-io", version.ref = "apache-commons-io" }
+
+# ===== Configuration Management =====
+typesafe-config = { module = "com.typesafe:config", version.ref = "typesafe-config" }
+apache-commons-configuration = { module = "org.apache.commons:commons-configuration2", version.ref = "apache-commons-configuration" }
+
+# ===== Plugin Architecture =====
+koin-core = { module = "io.insert-koin:koin-core", version.ref = "koin" }
+javax-inject = { module = "javax.inject:javax.inject", version.ref = "javax-inject" }
+asm = { module = "org.ow2.asm:asm", version.ref = "asm" }
+asm-util = { module = "org.ow2.asm:asm-util", version.ref = "asm" }
+
+# ===== Internationalization =====
+icu4j = { module = "com.ibm.icu:icu4j", version.ref = "icu4j" }
+apache-commons-text = { module = "org.apache.commons:commons-text", version.ref = "apache-commons-text" }
+snakeyaml = { module = "org.yaml:snakeyaml", version.ref = "snakeyaml" }
+
+[bundles]
+# Core Kotlin and language features
+kotlinx = [
+    "kotlinx-coroutines-core",
+    "kotlinx-coroutines-swing", 
+    "kotlinx-serialization-core",
+    "kotlinx-serialization-json",
+    "kotlinx-collections-immutable",
+    "kotlinx-datetime"
+]
+
+# Compose UI framework
+compose-desktop = [
+    "compose-runtime",
+    "compose-foundation", 
+    "compose-material3",
+    "compose-material-icons-extended",
+    "compose-ui",
+    "compose-ui-graphics",
+    "compose-ui-text"
+]
+
+# Development and debugging tools
+compose-tooling = [
+    "compose-ui-tooling",
+    "compose-ui-tooling-preview"
+]
+
+# Unit testing framework
+testing-unit = [
+    "junit-jupiter-engine",
+    "junit-jupiter-api", 
+    "junit-jupiter-params",
+    "mockk",
+    "kotest-runner-junit5",
+    "kotest-assertions-core"
+]
+
+# UI testing framework  
+testing-ui = [
+    "compose-ui-test-junit4",
+    "testng"
+]
+
+# Logging stack
+logging = [
+    "slf4j-api",
+    "logback-classic", 
+    "logback-core",
+    "kotlin-logging"
+]
+
+# File operations and I/O
+file-io = [
+    "okio",
+    "apache-commons-io"
+]
+
+# Configuration management
+configuration = [
+    "typesafe-config",
+    "apache-commons-configuration"
+]
+
+# Plugin architecture and dependency injection
+plugin-architecture = [
+    "koin-core",
+    "javax-inject", 
+    "asm",
+    "asm-util"
+]
+
+# Internationalization and localization
+i18n = [
+    "icu4j",
+    "apache-commons-text",
+    "snakeyaml"
+]
+
+[plugins]
+# Core Kotlin and Compose plugins
+kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+compose = { id = "org.jetbrains.compose", version.ref = "compose-multiplatform" }
+
+# Code quality and documentation
+detekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "detekt" }
+dokka = { id = "org.jetbrains.dokka", version.ref = "dokka" }
+
+# Build management
+gradle-versions = { id = "com.github.ben-manes.versions", version.ref = "gradle-versions" }
